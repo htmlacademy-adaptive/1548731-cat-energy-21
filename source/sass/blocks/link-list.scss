@@ -1,0 +1,11 @@
+.link-list {
+  background-color: $shinegrey;
+}
+
+.link-list__social {
+  list-style: none;
+  &--border {
+    border-top: 1px solid $bordergrey;
+    border-bottom: 1px solid $bordergrey;
+  }
+}

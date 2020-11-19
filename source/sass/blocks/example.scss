@@ -1,0 +1,16 @@
+.example {
+  background-color: $lightgrey;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $darkgrey;
+}
