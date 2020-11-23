@@ -1,0 +1,47 @@
+.special__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $darkgrey;
+  &:first-child::before {
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-leaf.svg");
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  &:nth-of-type(2)::before {
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-tub.svg");
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  &:nth-of-type(3)::before {
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-eat.svg");
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  &:last-child::before {
+    display: inline-block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-alarm.svg");
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+}

@@ -1,0 +1,23 @@
+.promo {
+  background-image: url("../img/promocat-mobile.png");
+  background-repeat: no-repeat;
+  color: $white;
+}
+
+.promo__background {
+  background-color: $promo-green;
+}
+
+.promo__slogan {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
