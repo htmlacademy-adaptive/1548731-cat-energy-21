@@ -1,11 +1,22 @@
 .example {
   background-color: $lightgrey;
+  @media (min-width: $tablet) {
+    background-image: linear-gradient($white 0%, $white 60%, $lightgrey 60%, $lightgrey 100%);
+    border-top: 1px solid $bordershinegrey;
+  }
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient($white 0%, $white 20%, $lightgrey 20%, $lightgrey 100%);
+  }
 }
 
-.example__text {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: normal;
-  color: $darkgrey;
+.example__wrapper {
+  padding: 0 20px;
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
 }

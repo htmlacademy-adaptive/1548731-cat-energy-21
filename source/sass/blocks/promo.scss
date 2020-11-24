@@ -1,11 +1,45 @@
 .promo {
-  background-image: url("../img/promocat-mobile.png");
-  background-repeat: no-repeat;
   color: $white;
+  background-image:
+    linear-gradient($promo-green 0%, $promo-green 60%, $white 60%, $white 100%),
+    url("../img/promocat-mobile.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  @media (min-width: $tablet) {
+    background-color: white;
+    background-image: none;
+  }
+  @media (min-width: $desktop) {
+    background-image:
+      linear-gradient(to right, $white 0%, $white 50%, $promo-green 50%, $promo-green 100%);
+  }
 }
 
-.promo__background {
-  background-color: $promo-green;
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  @media (min-width: $tablet) {
+    width: 415px;
+    align-items: flex-start;
+    padding: 0 115px;
+  }
+  @media (min-width: $desktop) {
+    width: 415px;
+    align-items: flex-start;
+    padding: 0 190px;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet) {
+    width: 709px;
+    height: 609px;
+    order: 2;
+    align-self: center;
+  }
 }
 
 .promo__slogan {
@@ -13,11 +47,9 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-}
-
-.promo__button {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+  }
 }
