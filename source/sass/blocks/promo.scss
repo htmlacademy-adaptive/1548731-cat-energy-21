@@ -11,8 +11,7 @@
     background-image: none;
   }
   @media (min-width: $desktop) {
-    background-image:
-      linear-gradient(to right, $white 0%, $white 50%, $promo-green 50%, $promo-green 100%);
+    background-image: linear-gradient(to right, $white 0%, $white 50%, $promo-green 50%, $promo-green 100%);
   }
 }
 
