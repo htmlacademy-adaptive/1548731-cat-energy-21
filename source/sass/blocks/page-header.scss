@@ -1,18 +1,30 @@
 .page-header {
+  padding: 0 20px;
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+  }
+}
+.page-main {
+  margin: 0 auto;
+}
+
+.page-header__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
   }
   @media (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 110px;
+    position: absolute;
+    width: 85%;
   }
 }
 

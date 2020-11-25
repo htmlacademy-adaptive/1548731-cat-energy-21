@@ -15,6 +15,12 @@
   }
 }
 
+.promo__title {
+  @media (min-width: $desktop) {
+    margin-top: 50px;
+  }
+}
+
 .promo__wrapper {
   display: flex;
   flex-direction: column;

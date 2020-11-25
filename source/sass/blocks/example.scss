@@ -7,7 +7,8 @@
   @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient($white 0%, $white 20%, $lightgrey 20%, $lightgrey 100%);
+    background-image: linear-gradient($white 0%, $white 40%, $lightgrey 40%, $lightgrey 100%);
+    border: none;
   }
 }
 
@@ -18,5 +19,9 @@
   }
   @media (min-width: $desktop) {
     padding: 0 110px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

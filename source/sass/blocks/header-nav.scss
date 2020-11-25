@@ -34,5 +34,8 @@
 .header-nav__item {
   &--border {
     border-top: 1px solid $bordershinegrey;
+    @media (min-width: $tablet) {
+      border: none;
+    }
   }
 }

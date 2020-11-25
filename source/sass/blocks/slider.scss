@@ -1,10 +1,16 @@
-.slider__state {
-  display: flex;
-  justify-content: center;
+.slider {
+  text-align: center;
 }
 
 .slider__image {
-  text-align: center;
+  @media (min-width: $desktop) {
+    margin-right: 200px;
+  }
+}
+
+.slider__state {
+  display: flex;
+  justify-content: center;
 }
 
 .slider__toggle {
