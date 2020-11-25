@@ -4,9 +4,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
   @media (min-width: $tablet) {
     padding: 0 70px;
   }
+
   @media (min-width: $desktop) {
     position: absolute;
     width: 570px;
@@ -24,6 +26,7 @@
   text-transform: uppercase;
   font-weight: normal;
   width: 140px;
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 21px;
@@ -36,12 +39,14 @@
   font-size: 14px;
   line-height: 20px;
   width: 140px;
+
   @media (min-width: $tablet) {
     width: 160px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
   }
+
   @media (min-width: $desktop) {
     text-align: left;
   }
@@ -49,6 +54,7 @@
 
 .party__text br {
   display: none;
+
   @media (min-width: $tablet) {
     display: block;
   }

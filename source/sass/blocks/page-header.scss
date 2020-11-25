@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
   }
+
   @media (min-width: $desktop) {
     flex-direction: row;
     justify-content: space-between;
@@ -26,6 +28,7 @@
     align-items: center;
     padding: 0 55px 0 20px;
   }
+
   .page-header__logo img:last-child {
     margin: 0 auto;
   }

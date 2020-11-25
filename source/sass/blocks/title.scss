@@ -5,10 +5,12 @@
   margin: 0;
   padding: 0;
   color: $black;
+
   &--feature {
     text-align: center;
     color: $white;
   }
+
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;

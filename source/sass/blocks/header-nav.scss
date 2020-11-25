@@ -4,11 +4,13 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $black;
+
   @media (min-width: $tablet) {
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
   }
+
   @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
@@ -21,10 +23,12 @@
   margin: 0;
   padding: 0;
   text-align: center;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
   }
+
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: row;
@@ -34,6 +38,7 @@
 .header-nav__item {
   &--border {
     border-top: 1px solid $bordershinegrey;
+
     @media (min-width: $tablet) {
       border: none;
     }
@@ -52,9 +57,11 @@
   width: 24px;
   height: 18px;
   background-color: inherit;
+
   @media (min-width: $tablet) {
     display: none;
   }
+
   @media (min-width: $desktop) {
     display: none;
   }
@@ -84,10 +91,12 @@
     height: 2px;
     background-color: $black;
   }
+
   &::before {
     transform: rotate(45deg);
     box-shadow: none;
   }
+
   &::after {
     transform: rotate(-45deg);
   }
@@ -97,12 +106,15 @@
   .header-nav--closed .header-nav__list {
     display: none;
   }
+
   .header-nav--opened .header-nav__list {
     display: block;
   }
+
   .header-nav--nojs .header-nav__toggle {
     display: none;
   }
+
   .header-nav--nojs .header-nav__list {
     display: block;
   }
