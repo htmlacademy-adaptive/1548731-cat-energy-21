@@ -1,0 +1,16 @@
+.page-footer {
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
+.page-footer__map {
+  width: 100%;
+  height: 360px;
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
+  @media (min-width: $desktop) {
+    height: 400px;
+  }
+}

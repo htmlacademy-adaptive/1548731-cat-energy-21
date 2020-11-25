@@ -4,9 +4,10 @@
     linear-gradient($promo-green 0%, $promo-green 60%, $white 60%, $white 100%),
     url("../img/promocat-mobile.png");
   background-repeat: no-repeat;
-  background-position: cover;
+  background-position: center top;
+  background-size: 100%;
   @media (min-width: $tablet) {
-    background-color: white;
+    background-color: $white;
     background-image: none;
   }
   @media (min-width: $desktop) {
