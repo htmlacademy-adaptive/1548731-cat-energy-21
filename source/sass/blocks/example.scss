@@ -1,9 +1,11 @@
 .example {
   background-color: $lightgrey;
+  padding: 0 20px;
 
   @media (min-width: $tablet) {
     background-image: linear-gradient($white 0%, $white 60%, $lightgrey 60%, $lightgrey 100%);
     border-top: 1px solid $bordershinegrey;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop) {
@@ -11,21 +13,17 @@
     justify-content: space-between;
     background-image: linear-gradient($white 0%, $white 40%, $lightgrey 40%, $lightgrey 100%);
     border: none;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
   }
 }
 
 .example__wrapper {
-  padding: 0 20px;
-
-  @media (min-width: $tablet) {
-    padding: 0 30px;
-  }
-
   @media (min-width: $desktop) {
-    padding: 0 110px;
-    width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 450px;
   }
 }
