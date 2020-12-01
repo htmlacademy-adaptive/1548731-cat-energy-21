@@ -1,4 +1,8 @@
 .services {
+  background-color: $white;
+}
+
+.services__wrapper {
   padding: 0 20px;
 
   @media (min-width: $tablet) {
@@ -6,9 +10,11 @@
   }
 
   @media (min-width: $desktop) {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 110px;
+    margin: 0 auto;
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
   }
 }
 
@@ -18,12 +24,6 @@
   margin-bottom: 20px;
   padding: 0 20px;
   position: relative;
-
-  &:first-child {
-    @media (min-width: $desktop) {
-      margin-right: 80px;
-    }
-  }
 }
 
 .services__title {

@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.slider__image {
-  @media (min-width: $desktop) {
-    margin-right: 200px;
-  }
-}
-
 .slider__state {
   display: flex;
   justify-content: center;
