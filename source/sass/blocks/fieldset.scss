@@ -1,14 +1,16 @@
 .fieldset {
   border: none;
+
   & textarea::placeholder {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     font-weight: normal;
   }
+
   &--border {
-      border-top: 1px solid $bordergrey;
-      border-bottom: 1px solid $bordergrey;
+    border-top: 1px solid $bordergrey;
+    border-bottom: 1px solid $bordergrey;
   }
 }
 

@@ -1,7 +1,45 @@
+.profit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: $mobile-only) {
+    width: 320px;
+  }
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+  }
+}
+
+.profit__block {
+  border: 1px solid $specialgrey;
+  border-radius: 3px;
+  display: flex;
+  min-width: 124px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:first-child {
+    margin-right: 28px;
+  }
+
+  @media (min-width: $tablet) {
+    min-width: 162px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 162px;
+  }
+}
+
 .profit__text {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
 }
 
 .profit__legend {
@@ -10,10 +48,38 @@
   font-size: 12px;
   line-height: 12px;
   color: $darkgrey;
+  width: 60px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    width: 130px;
+  }
 }
 
 .profit__block-text {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    margin-left: 0;
+  }
+}
+
+.profit__block-text span {
+  @media (min-width: $tablet) {
+    align-self: flex-end;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 62px;
+  }
 }

@@ -1,11 +1,38 @@
 .example {
   background-color: $lightgrey;
+
+  @media (min-width: $tablet) {
+    background-image: linear-gradient($white 0%, $white 60%, $lightgrey 60%, $lightgrey 100%);
+    border-top: 1px solid $bordershinegrey;
+  }
+
+  @media (min-width: $desktop) {
+    background-image: linear-gradient($white 0%, $white 40%, $lightgrey 40%, $lightgrey 100%);
+    border: none;
+  }
 }
 
-.example__text {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: normal;
-  color: $darkgrey;
+.example__sub-wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+  }
+}
+
+.example__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
