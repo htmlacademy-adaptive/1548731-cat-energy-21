@@ -3,11 +3,34 @@
   line-height: 18px;
   text-transform: uppercase;
   font-weight: normal;
+  color: $darkgrey;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--radiocolor {
+    color: $verydarkgrey;
+  }
+
+  &--checkboxcolor {
+    color: $black;
+  }
 
   & input::placeholder {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     font-weight: normal;
+    color: $darkgrey;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
