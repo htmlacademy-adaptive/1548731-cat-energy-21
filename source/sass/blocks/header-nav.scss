@@ -3,7 +3,6 @@
   line-height: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  color: $black;
 
   @media (min-width: $tablet) {
     font-size: 18px;
@@ -14,7 +13,17 @@
   @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
-    color: $white;
+  }
+}
+
+.header-nav__link {
+  text-decoration: none;
+  color: $black;
+
+  &--color {
+    @media (min-width: $desktop) {
+      color: $white;
+    }
   }
 }
 
@@ -37,7 +46,7 @@
 
 .header-nav__item {
   &--border {
-    border-top: 1px solid $bordershinegrey;
+    border-bottom: 1px solid $bordershinegrey;
 
     @media (min-width: $tablet) {
       border: none;
@@ -49,7 +58,7 @@
   position: absolute;
   cursor: pointer;
   top: 10px;
-  right: 20px;
+  right: 10px;
   border: none;
   outline: none;
   margin: 0;

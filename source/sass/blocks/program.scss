@@ -1,5 +1,24 @@
 .program {
   font-family: "Oswald", "Arial", sans-serif;
+
+  @media (min-width: $desktop) {
+    margin-top: 50px;
+  }
+}
+
+.program__wrapper {
+  padding: 0 10px;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 }
 
 .program__intro {
@@ -7,11 +26,9 @@
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
-}
 
-.program__legend {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: normal;
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

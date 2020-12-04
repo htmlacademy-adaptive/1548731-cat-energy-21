@@ -3,10 +3,10 @@
 }
 
 .services__wrapper {
-  padding: 0 20px;
+  padding: 0 10px;
 
   @media (min-width: $tablet) {
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   @media (min-width: $desktop) {
@@ -24,6 +24,10 @@
   margin-bottom: 20px;
   padding: 0 20px;
   position: relative;
+
+  @media (min-width: $tablet) {
+    padding: 0 50px;
+  }
 }
 
 .services__title {
@@ -31,6 +35,11 @@
   line-height: 37px;
   text-transform: uppercase;
   position: relative;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
   &--slim::before {
     display: inline-block;

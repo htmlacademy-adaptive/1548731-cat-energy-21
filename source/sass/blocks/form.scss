@@ -1,0 +1,20 @@
+.form__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.form__button-wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.form__legend {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
