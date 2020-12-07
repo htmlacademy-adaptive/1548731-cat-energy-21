@@ -20,13 +20,14 @@
 
 .services__block {
   background-color: $shinegrey;
-  border: 1px solid $bordergrey;
+  border: 1px solid $shinegrey;
   margin-bottom: 20px;
   padding: 0 20px;
   position: relative;
 
   @media (min-width: $tablet) {
     padding: 0 50px;
+    min-height: 372px;
   }
 }
 
@@ -35,47 +36,94 @@
   line-height: 37px;
   text-transform: uppercase;
   position: relative;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet) {
+    margin-top: 85px;
     font-size: 36px;
     line-height: 36px;
   }
 
+  @media (min-width: $desktop) {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
   &--slim::before {
-    display: inline-block;
     content: "";
     width: 50px;
     height: 53px;
     background-image: url("../img/cat-slim.svg");
     background-repeat: no-repeat;
+    margin-right: 27px;
 
     @media (min-width: $tablet) {
       position: absolute;
-      right: 0;
+      background-image: url("../img/cat-slim-tablet.svg");
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 211px;
+      right: -20px;
       top: 0;
     }
 
     @media (min-width: $desktop) {
       position: relative;
+      background-image: url("../img/cat-slim-desktop.svg");
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 106px;
+      right: 0;
     }
   }
 
   &--weight::before {
-    display: inline-block;
     content: "";
     width: 67px;
     height: 50px;
     background-image: url("../img/cat-weight.svg");
+    background-repeat: no-repeat;
+    margin-right: 10px;
 
     @media (min-width: $tablet) {
       position: absolute;
-      right: 0;
+      background-image: url("../img/cat-weight-tablet.svg");
+      background-repeat: no-repeat;
+      width: 268px;
+      height: 200px;
+      right: -35px;
       top: 0;
     }
 
     @media (min-width: $desktop) {
       position: relative;
+      right: 0;
+      background-image: url("../img/cat-weight-desktop.svg");
+      background-repeat: no-repeat;
+      width: 134px;
+      height: 100px;
     }
+  }
+}
+
+.services__text {
+  border-bottom: 1px solid $bordergrey;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    width: 60%;
+    border: 0;
+    padding-bottom: 40px;
+
+    &--maket {
+      width: 55%;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+    padding-bottom: 10px;
   }
 }
 
@@ -85,4 +133,28 @@
   text-decoration: none;
   font-size: 16px;
   line-height: 16px;
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  width: 140px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 12px;
+    margin-left: 15px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    transition: 0.1s;
+  }
+
+  &:hover::after {
+    width: 32px;
+    background-image: url("../img/arrow2.svg");
+  }
 }

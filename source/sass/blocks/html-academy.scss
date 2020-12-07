@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0 20px 0;
 }
 
 .html-academy__link {
@@ -10,4 +11,5 @@
   line-height: 18.4px;
   color: $darkgrey;
   text-decoration: none;
+  margin-right: 20px;
 }

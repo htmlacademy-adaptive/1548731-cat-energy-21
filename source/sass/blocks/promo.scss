@@ -1,26 +1,42 @@
 .promo {
   color: $white;
   background-image:
-    linear-gradient($promo-green 0%, $promo-green 60%, $white 60%, $white 100%),
-    url("../img/promocat-mobile.png");
+    linear-gradient($promo-green 0%, $promo-green 65%, $white 65%, $white 100%),
+    url("../img/promocat-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
   background-size: 100%;
+  background-position: top;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet) {
     background-color: $white;
     background-image: none;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop) {
-    background-image: linear-gradient(to right, $white 0%, $white 50%, $promo-green 50%, $promo-green 100%);
+    background:
+      linear-gradient(to right, $white 0%, $white 50%, $promo-green 50%, $promo-green 100%),
+      url("../img/promocat-desktop.jpg") 100%;
+    background-repeat: no-repeat;
     margin-bottom: 80px;
   }
 }
 
 .promo__title {
-  @media (min-width: $desktop) {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    width: 440px;
     margin-top: 50px;
+    margin-left: 110px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 440px;
+    margin-top: 210px;
+    margin-left: 80px;
   }
 }
 
@@ -28,12 +44,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 0 10px;
 
   @media (min-width: $tablet) {
     align-items: flex-start;
-    margin: 0 auto;
     padding: 0 20px;
   }
 
@@ -45,10 +59,19 @@
 }
 
 .promo__img {
+  margin-top: 15px;
+  align-self: center;
+
   @media (min-width: $tablet) {
-    width: 709px;
-    height: 609px;
     order: 2;
+    margin-top: -80px;
+    background-color: inherit;
+    align-self: flex-end;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 230px;
+    margin-top: -375px;
     align-self: center;
   }
 }
@@ -58,10 +81,32 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  align-self: center;
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 20px;
     color: $black;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 110px;
+    padding: 0;
+    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 80px;
+  }
+}
+
+.promo__button {
+  @media (min-width: $tablet) {
+    padding: 14px 26px;
+    z-index: 100;
+    margin-left: 110px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 80px;
   }
 }

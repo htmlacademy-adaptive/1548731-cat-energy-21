@@ -45,11 +45,31 @@
 }
 
 .header-nav__item {
+  @media (max-width: $mobile-only) {
+    padding: 22px 0 24px 0;
+  }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+  }
+
   &--border {
     border-bottom: 1px solid $bordershinegrey;
 
     @media (min-width: $tablet) {
       border: none;
+    }
+  }
+
+  &--active {
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $basic-green;
+    }
+
+    @media (min-width: $desktop) {
+      border-bottom: 2px solid $white;
     }
   }
 }

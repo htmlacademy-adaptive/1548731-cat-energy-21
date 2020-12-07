@@ -2,17 +2,19 @@
   background-color: $lightgrey;
 
   @media (min-width: $tablet) {
-    background-image: linear-gradient($white 0%, $white 60%, $lightgrey 60%, $lightgrey 100%);
+    background-image: linear-gradient($white 0%, $white 55%, $lightgrey 55%, $lightgrey 100%);
     border-top: 1px solid $bordershinegrey;
   }
 
   @media (min-width: $desktop) {
-    background-image: linear-gradient($white 0%, $white 40%, $lightgrey 40%, $lightgrey 100%);
+    background-image: linear-gradient($white 0%, $white 28%, $lightgrey 28%, $lightgrey 100%);
     border: none;
   }
 }
 
 .example__sub-wrapper {
+  margin-bottom: 30px;
+
   @media (min-width: $desktop) {
     display: flex;
     flex-direction: column;
@@ -33,6 +35,30 @@
     width: 1220px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+  }
+}
+
+.example__intro {
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 45px;
+  }
+}
+
+.example__title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
+    margin-top: 50px;
+    margin-bottom: 130px;
   }
 }
