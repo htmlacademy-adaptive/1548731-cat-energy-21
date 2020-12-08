@@ -18,13 +18,28 @@
 
   @media (min-width: $tablet) {
     display: flex;
+    width: 130px;
+    justify-content: space-between;
+    margin-left: 28px;
   }
 }
 
-.social__item {
-  padding: 20px 0 20px 0;
+  @media (max-width: $mobile-only) {
+    .social__item {
+      padding: 20px 0 14px 0;
 
-  &:not(:last-child) {
-    margin-right: 35px;
-  }
-}
+      &:first-child {
+        margin-right: 30px;
+      }
+
+      &:nth-child(2) {
+        margin-right: 30px;
+      }
+    }
+ }
+
+ .social__link {
+   &:active {
+     opacity: 0.3;
+   }
+ }

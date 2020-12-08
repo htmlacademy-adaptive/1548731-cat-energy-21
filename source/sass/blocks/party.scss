@@ -1,5 +1,5 @@
 .party {
-  padding: 0 10px;
+  padding: 12px 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet) {
     padding: 0 70px;
+    min-height: 200px;
   }
 
   @media (min-width: $desktop) {
@@ -16,6 +17,7 @@
     background-color: $white;
     box-sizing: border-box;
     top: 95px;
+    padding: 0 76px;
   }
 }
 
@@ -29,6 +31,12 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 21px;
+    width: 155px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
   }
 }
 
@@ -44,14 +52,19 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+    margin-top: 34px;
   }
 
   @media (min-width: $desktop) {
     text-align: left;
+    padding-top: 6px;
+    margin-right: 6px;
+    margin-top: 0;
   }
 }
 
-.party__text br {
+.party__text br,
+.party__title br {
   display: none;
 
   @media (min-width: $tablet) {

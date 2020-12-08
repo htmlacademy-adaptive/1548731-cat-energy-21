@@ -20,6 +20,14 @@
   text-decoration: none;
   color: $black;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--color {
     @media (min-width: $desktop) {
       color: $white;
@@ -51,7 +59,7 @@
 
   @media (min-width: $tablet) {
     &:not(:last-child) {
-      margin-right: 34px;
+      margin-right: 36px;
     }
   }
 
@@ -65,6 +73,7 @@
 
   &--active {
     @media (min-width: $tablet) {
+      padding-bottom: 10px;
       border-bottom: 2px solid $basic-green;
     }
 
@@ -77,8 +86,8 @@
 .header-nav__toggle {
   position: absolute;
   cursor: pointer;
-  top: 10px;
-  right: 10px;
+  top: 23px;
+  right: 20px;
   border: none;
   outline: none;
   margin: 0;

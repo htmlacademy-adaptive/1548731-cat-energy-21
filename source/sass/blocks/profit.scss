@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 38px;
+    margin-bottom: 60px;
     min-width: 162px;
   }
 }
@@ -50,6 +50,11 @@
   text-transform: uppercase;
   font-weight: normal;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .profit__legend {
@@ -97,7 +102,7 @@
 
   @media (min-width: $desktop) {
     flex-direction: row;
-    margin-left: 0;
+    margin: 0;
   }
 }
 

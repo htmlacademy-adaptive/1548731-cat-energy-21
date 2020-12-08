@@ -1,5 +1,17 @@
 .services {
+  padding-top: 10px;
+  padding-bottom: 14px;
   background-color: $white;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 83px;
+    padding-bottom: 27px;
+  }
 }
 
 .services__wrapper {
@@ -10,6 +22,7 @@
   }
 
   @media (min-width: $desktop) {
+    padding-top: 0px;
     margin: 0 auto;
     width: 1220px;
     display: grid;
@@ -21,11 +34,16 @@
 .services__block {
   background-color: $shinegrey;
   border: 1px solid $shinegrey;
-  margin-bottom: 20px;
   padding: 0 20px;
   position: relative;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet) {
+    margin-bottom: 25px;
     padding: 0 50px;
     min-height: 372px;
   }
@@ -34,20 +52,24 @@
 .services__title {
   font-size: 24px;
   line-height: 37px;
+  font-weight: normal;
   text-transform: uppercase;
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet) {
-    margin-top: 85px;
+    margin-bottom: 26px;
+    margin-top: 72px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 50px;
+    margin-top: 41px;
     margin-bottom: 40px;
+    font-weight: normal;
   }
 
   &--slim::before {
@@ -64,8 +86,8 @@
       background-repeat: no-repeat;
       width: 200px;
       height: 211px;
-      right: -20px;
-      top: 0;
+      right: -16px;
+      top: 6px;
     }
 
     @media (min-width: $desktop) {
@@ -75,13 +97,14 @@
       width: 100px;
       height: 106px;
       right: 0;
+      margin-right: 60px;
     }
   }
 
   &--weight::before {
     content: "";
     width: 67px;
-    height: 50px;
+    height: 53px;
     background-image: url("../img/cat-weight.svg");
     background-repeat: no-repeat;
     margin-right: 10px;
@@ -91,9 +114,9 @@
       background-image: url("../img/cat-weight-tablet.svg");
       background-repeat: no-repeat;
       width: 268px;
-      height: 200px;
-      right: -35px;
-      top: 0;
+      height: 211px;
+      right: -33px;
+      top: 25px;
     }
 
     @media (min-width: $desktop) {
@@ -102,19 +125,26 @@
       background-image: url("../img/cat-weight-desktop.svg");
       background-repeat: no-repeat;
       width: 134px;
-      height: 100px;
+      height: 106px;
+      right: 18px;
+      top: 5px;
+      margin-right: 28px;
     }
   }
 }
 
 .services__text {
   border-bottom: 1px solid $bordergrey;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 23px;
+  width: 227px;
 
   @media (min-width: $tablet) {
     width: 60%;
     border: 0;
-    padding-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 55px;
+    padding-bottom: 0;
 
     &--maket {
       width: 55%;
@@ -123,7 +153,8 @@
 
   @media (min-width: $desktop) {
     width: auto;
-    padding-bottom: 10px;
+    margin-bottom: 27px;
+    padding-bottom: 0;
   }
 }
 
@@ -137,10 +168,13 @@
   align-items: center;
   margin-top: 18px;
   margin-bottom: 20px;
-  width: 140px;
+  min-width: 140px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   &::after {
@@ -151,10 +185,23 @@
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     transition: 0.1s;
+    margin-left: 18px;
+
+    @media (min-width: $tablet) {
+      margin-left: 27px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 27px;
+    }
   }
 
   &:hover::after {
     width: 32px;
     background-image: url("../img/arrow2.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
