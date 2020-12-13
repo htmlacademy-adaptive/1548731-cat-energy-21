@@ -8,17 +8,23 @@
   }
 }
 
+// .slider__img {
+//   @media (min-width: $tablet) {
+//     width: 691px;
+//   }
+// }  -- Правило чтоб убрать скролл при 768, но ломается все по пп
+
 .slider__image {
   width: 280px;
   height: 232px;
 
   @media (min-width: $tablet) {
-    width: 708px;
+    width: 698px;
     height: 620px;
   }
 
   @media (min-width: $desktop) {
-    width: 650px;
+    width: 670px;
     height: 656px;
     margin-top: 10px;
   }
