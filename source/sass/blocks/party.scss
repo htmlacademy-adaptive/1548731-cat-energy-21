@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet) {
     padding: 0 70px;
-    min-height: 200px;
+    min-height: 205px;
   }
 
   @media (min-width: $desktop) {
@@ -23,20 +23,20 @@
 
 .party__title {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   font-weight: normal;
   width: 140px;
 
   @media (min-width: $tablet) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
     width: 155px;
-    margin-top: 25px;
+    margin-top: 30px;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 0;
+    margin-top: 20px;
   }
 }
 
@@ -52,19 +52,19 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
-    margin-top: 34px;
+    margin-top: 25px;
+    margin-right: 2px;
   }
 
   @media (min-width: $desktop) {
     text-align: left;
     padding-top: 6px;
     margin-right: 6px;
-    margin-top: 0;
+    margin-top: 13px;
   }
 }
 
-.party__text br,
-.party__title br {
+.party__text br {
   display: none;
 
   @media (min-width: $tablet) {

@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 5px;
   }
 }
@@ -45,7 +45,7 @@
     grid-template-rows: max-content max-content;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 55px;
-    grid-row-gap: 65px;
+    grid-row-gap: 69px;
   }
 
   @media (min-width: $desktop) {

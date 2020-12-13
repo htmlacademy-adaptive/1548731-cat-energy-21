@@ -4,9 +4,6 @@
   justify-content: center;
   margin: 0 auto;
 
-  @media (max-width: $mobile-only) {
-    width: 320px;
-  }
 
   @media (min-width: $tablet) {
     justify-content: flex-start;
@@ -23,7 +20,7 @@
   align-items: center;
   position: relative;
   height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   &:first-child {
     margin-right: 28px;
@@ -34,7 +31,7 @@
   }
 
   @media (min-width: $tablet) {
-    height: 77px;
+    height: 70px;
     min-width: 162px;
   }
 
@@ -76,7 +73,7 @@
     line-height: 14px;
     min-width: 115px;
     background-color: $white;
-    top: 70px;
+    top: 65px;
 
     &--size {
       min-width: 140px;
@@ -98,6 +95,7 @@
     margin-left: auto;
     display: flex;
     flex-direction: column;
+    margin-top: 12px;
   }
 
   @media (min-width: $desktop) {
@@ -109,9 +107,11 @@
 .profit__block-text span {
   @media (min-width: $tablet) {
     align-self: flex-end;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop) {
     margin-left: 62px;
+    margin-top: 0;
   }
 }

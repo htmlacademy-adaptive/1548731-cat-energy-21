@@ -4,6 +4,14 @@
   align-items: center;
   padding: 20px 0 20px 0;
 
+  @media (min-width: $tablet) {
+    margin-top: 6px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 15px;
+  }
+
   &:active {
     opacity: 0.3;
   }

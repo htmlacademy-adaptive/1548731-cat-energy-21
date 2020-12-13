@@ -1,14 +1,25 @@
 .form__wrapper {
-  @media (min-width: $desktop) {
+    @media (min-width: $desktop) {
     display: flex;
   }
 }
 
 .form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    padding-bottom: 70px;
+    padding-top: 30px;
+  }
+}
+
+.form__button {
+  @media (min-width: $tablet) {
+    padding: 13px 45px;
+    margin-right: 72px;
   }
 }
 
@@ -17,4 +28,6 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
+  align-self: center;
+  margin: 0;
 }

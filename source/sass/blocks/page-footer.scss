@@ -1,4 +1,12 @@
 .page-footer__wrapper {
+  &--background {
+    background-color: $shinegrey;
+
+    @media (min-width: $desktop) {
+      background-color: $white;
+    }
+  }
+
   @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
