@@ -7,24 +7,34 @@
 }
 
 .program__wrapper {
-  padding: 0 20px;
-  padding-top: 25px;
+  padding: 25px 20px 0 20px;
 
   @media (min-width: $tablet) {
     margin: 0 auto;
     padding: 0 70px;
-    padding-top: 65px;
+    padding-top: 60px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-top: 135px;
+    padding-bottom: 10px;
   }
 }
 
 .program__title {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 57px;
+  }
 }
 
 .program__intro {
@@ -42,9 +52,14 @@
 }
 
 .program__form {
-  padding-top: 10px;
+  padding-top: 13px;
 
   @media (min-width: $tablet) {
-    padding-top: 20px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 11px;
+    padding-bottom: 74px;
   }
 }
