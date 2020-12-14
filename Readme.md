@@ -1,3 +1,9 @@
+---
+
+permalink: source/index.html
+
+---
+
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Вевер](https://up.htmlacademy.ru/adaptive/21/user/1548731).
