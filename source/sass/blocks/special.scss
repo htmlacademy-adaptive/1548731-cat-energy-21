@@ -194,3 +194,9 @@
     }
   }
 }
+
+@media (max-width: $mobile-only) {
+  .special__text br {
+    display: none;
+  }
+}
