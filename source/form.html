@@ -51,59 +51,61 @@
         <div class="program__wrapper">
           <h2 class="program__title title">Подбор программы</h2>
             <p class="program__intro">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
-              <form class="program__form form" method="get" action="https://echo.htmlacademy.ru">
-                <div class="form__wrapper">
-                  <fieldset class="fieldset">
-                    <label class="field">Имя:*<input class="field__input" type="text" name="name" placeholder="Барсик"></label>
-                    <label class="field">Вес (кг):*<input class="field__input" type="text" name="weight" placeholder="7"></label>
-                    <label class="field">Возраст (лет):<input class="field__input" type="text" name="old" placeholder="7"></label>
-                  </fieldset>
-                  <fieldset class="fieldset fieldset--border">
-                    <input class="field__radio" type="radio" id="radio1" name="program" value="slim" checked>
-                    <label class="field field--radiocolor" for="radio1">Похудение</label>
-                    <input class="field__radio" type="radio" id="radio2" name="program" value="mass">
-                    <label class="field field--radiocolor" for="radio2">Набор массы</label>
-                    <input class="field__radio" type="radio" id="radio3" name="program" value="advice">
-                    <label class="field field--radiocolor" for="radio3">Не знаю (нужен ваш совет)</label>
-                  </fieldset>
-                </div>
-                <fieldset class="fieldset">
-                  <legend class="fieldset__title">Контактные данные (владельца кота)</legend>
-                    <div class="fieldset__contact-wrapper">
-                      <label class="field">E-mail:*<input class="field__input" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
-                      <label class="field">Телефон:*<input class="field__input" type="tel" name="tel" placeholder="8 (960) 900-60-90"></label>
-                    </div>
-                  </fieldset>
-                <fieldset class="fieldset">
-                  <legend class="fieldset__title">Комментарий</legend>
-                  <textarea class="fieldset__text" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
-                </fieldset>
-                <fieldset class="fieldset">
-                  <legend class="fieldset__title">Дополнительно</legend>
-                    <div class="fieldset__add-wrapper">
-                      <input class="field__checkbox" type="checkbox" id="check1" name="additional" value="sugar" checked>
-                      <label class="field field--checkboxcolor" for="check1">Сахарозаменитель</label>
-                      <input class="field__checkbox" type="checkbox" id="check2" name="additional" value="water">
-                      <label class="field field--checkboxcolor" for="check2">Питьевая вода</label>
-                      <input class="field__checkbox" type="checkbox" id="check3" name="additional" value="milk">
-                      <label class="field field--checkboxcolor" for="check3">Молоко</label>
-                      <input class="field__checkbox" type="checkbox" id="check4" name="additional" value="vitamins">
-                      <label class="field field--checkboxcolor" for="check4">Витамины</label>
-                    </div>
-                </fieldset>
-                <div class="form__button-wrapper">
-                  <button type="submit" class="form__button button">Отправить заявку</button>
-                  <p class="form__legend">* &#8212; Обязательные поля</p>
-                </div>
-              </form>
         </div>
+        <form class="program__form form" method="get" action="https://echo.htmlacademy.ru">
+          <div class="form__wrapper">
+            <fieldset class="fieldset">
+              <label class="field">Имя:*<input class="field__input" type="text" name="name" placeholder="Барсик"></label>
+              <label class="field">Вес (кг):*<input class="field__input" type="text" name="weight" placeholder="7"></label>
+              <label class="field">Возраст (лет):<input class="field__input" type="text" name="old" placeholder="7"></label>
+            </fieldset>
+            <fieldset class="fieldset fieldset--border">
+              <div class="fieldset__radio-wrapper">
+                <input class="field__radio" type="radio" id="radio1" name="program" value="slim" checked>
+                <label class="field field--radiocolor" for="radio1">Похудение</label>
+                <input class="field__radio" type="radio" id="radio2" name="program" value="mass">
+                <label class="field field--radiocolor" for="radio2">Набор массы</label>
+                <input class="field__radio" type="radio" id="radio3" name="program" value="advice">
+                <label class="field field--radiocolor" for="radio3">Не знаю (нужен ваш совет)</label>
+              </div>
+            </fieldset>
+          </div>
+          <fieldset class="fieldset fieldset--line">
+            <legend class="fieldset__title">Контактные данные<br> (владельца кота)</legend>
+              <div class="fieldset__contact-wrapper">
+                <label class="field">E-mail:*<input class="field__input" type="email" name="email" placeholder="kuklachev@gmail.com"></label>
+                <label class="field">Телефон:*<input class="field__input" type="tel" name="tel" placeholder="8 (960) 900-60-90"></label>
+              </div>
+          </fieldset>
+          <fieldset class="fieldset fieldset--line">
+            <legend class="fieldset__title">Комментарий</legend>
+            <textarea class="fieldset__text" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
+          </fieldset>
+          <fieldset class="fieldset fieldset--line">
+            <legend class="fieldset__title">Дополнительно</legend>
+              <div class="fieldset__add-wrapper">
+                <input class="field__checkbox" type="checkbox" id="check1" name="additional" value="sugar" checked>
+                <label class="field field--checkboxcolor" for="check1">Сахарозаменитель</label>
+                <input class="field__checkbox" type="checkbox" id="check2" name="additional" value="water">
+                <label class="field field--checkboxcolor" for="check2">Питьевая вода</label>
+                <input class="field__checkbox" type="checkbox" id="check3" name="additional" value="milk">
+                <label class="field field--checkboxcolor" for="check3">Молоко</label>
+                <input class="field__checkbox" type="checkbox" id="check4" name="additional" value="vitamins">
+                <label class="field field--checkboxcolor" for="check4">Витамины</label>
+              </div>
+          </fieldset>
+          <div class="form__button-wrapper">
+            <button type="submit" class="form__button button">Отправить заявку</button>
+            <p class="form__legend">* &#8212; Обязательные поля</p>
+          </div>
+        </form>
       </section>
 
       <footer class="page-footer">
         <div class="page-footer__wrapper page-footer__wrapper--background">
-          <div class="page-footer__party party">
-            <p class="party__title">Приглашаем<br> к сотрудничеству дилеров!</p>
-            <p class="party__text">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
+          <div class="page-footer__party party party--form">
+            <p class="party__title party__title--form">Приглашаем<br> к сотрудничеству дилеров!</p>
+            <p class="party__text party__title--form">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
           </div>
         </div>
         <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.415214209338!2d30.31431410252063!3d59.93871621143762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607367694615!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
