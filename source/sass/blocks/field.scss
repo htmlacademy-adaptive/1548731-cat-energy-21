@@ -117,6 +117,11 @@
     }
   }
 
+  &:focus + label::before,
+  &:hover + label::before {
+    border: 1px solid $radiofocus;
+  }
+
   &:checked + label::after {
     content: "";
     position: absolute;
@@ -151,6 +156,11 @@
       width: 40px;
       height: 40px;
     }
+  }
+
+  &:focus + label::before,
+  &:hover + label::before {
+    border: 1px solid $radiofocus;
   }
 
   &:checked + label::after {
