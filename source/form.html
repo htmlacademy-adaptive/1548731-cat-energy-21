@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
@@ -11,15 +11,19 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__logo">
-          <img src="img/header-logo-mobile.svg">
-          <img src="img/header-logo-cat.svg">
-        </div>
+        <a href="index.html" class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/header-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
+            <img src="img/header-logo-mobile.svg">
+          </picture>
+          <img class="page-header__logo2" src="img/header-logo-cat.svg">
+        </a>
 
         <nav class="header-nav header-nav--closed header-nav--nojs">
           <button class="header-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="header-nav__list">
-            <li class="header-nav__item header-nav__item--border header-nav__item--active">
+            <li class="header-nav__item header-nav__item--border">
               <a class="header-nav__link" href="index.html">
                 Главная
               </a>
@@ -29,7 +33,7 @@
                 Каталог продукции
               </a>
             </li>
-            <li class="header-nav__item header-nav__item--border">
+            <li class="header-nav__item header-nav__item--border header-nav__item--active">
               <a class="header-nav__link" href="form.html">
                 Подбор программы
               </a>
@@ -46,7 +50,7 @@
       <section class="program">
         <div class="program__wrapper">
           <h2 class="program__title title">Подбор программы</h2>
-            <p class="program__intro">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            <p class="program__intro">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
               <form class="program__form form" method="get" action="https://echo.htmlacademy.ru">
                 <div class="form__wrapper">
                   <fieldset class="fieldset">
@@ -55,9 +59,12 @@
                     <label class="field">Возраст (лет):<input class="field__input" type="text" name="old" placeholder="7"></label>
                   </fieldset>
                   <fieldset class="fieldset fieldset--border">
-                    <label class="field field--radiocolor">Похудение<input class="field__radio" type="radio"></label>
-                    <label class="field field--radiocolor">Набор массы<input class="field__radio" type="radio"></label>
-                    <label class="field field--radiocolor">Не знаю (нужен ваш совет)<input class="field__radio" type="radio"></label>
+                    <input class="field__radio" type="radio" id="radio1" name="program" value="slim" checked>
+                    <label class="field field--radiocolor" for="radio1">Похудение</label>
+                    <input class="field__radio" type="radio" id="radio2" name="program" value="mass">
+                    <label class="field field--radiocolor" for="radio2">Набор массы</label>
+                    <input class="field__radio" type="radio" id="radio3" name="program" value="advice">
+                    <label class="field field--radiocolor" for="radio3">Не знаю (нужен ваш совет)</label>
                   </fieldset>
                 </div>
                 <fieldset class="fieldset">
@@ -69,61 +76,75 @@
                   </fieldset>
                 <fieldset class="fieldset">
                   <legend class="fieldset__title">Комментарий</legend>
-                  <textarea class="fieldset__text" placeholder="Расскажите обо всех повадках кота"></textarea>
+                  <textarea class="fieldset__text" placeholder="Расскажите обо всех повадках кота" rows="6"></textarea>
                 </fieldset>
                 <fieldset class="fieldset">
                   <legend class="fieldset__title">Дополнительно</legend>
                     <div class="fieldset__add-wrapper">
-                      <label class="field field--checkboxcolor">Сахарозаменитель<input class="field__checkbox" type="checkbox"></label>
-                      <label class="field field--checkboxcolor">Питьевая вода<input class="field__checkbox" type="checkbox"></label>
-                      <label class="field field--checkboxcolor">Молоко<input class="field__checkbox" type="checkbox"></label>
-                      <label class="field field--checkboxcolor">Витамины<input class="field__checkbox" type="checkbox"></label>
+                      <input class="field__checkbox" type="checkbox" id="check1" name="additional" value="sugar" checked>
+                      <label class="field field--checkboxcolor" for="check1">Сахарозаменитель</label>
+                      <input class="field__checkbox" type="checkbox" id="check2" name="additional" value="water">
+                      <label class="field field--checkboxcolor" for="check2">Питьевая вода</label>
+                      <input class="field__checkbox" type="checkbox" id="check3" name="additional" value="milk">
+                      <label class="field field--checkboxcolor" for="check3">Молоко</label>
+                      <input class="field__checkbox" type="checkbox" id="check4" name="additional" value="vitamins">
+                      <label class="field field--checkboxcolor" for="check4">Витамины</label>
                     </div>
                 </fieldset>
                 <div class="form__button-wrapper">
                   <button type="submit" class="form__button button">Отправить заявку</button>
-                  <p class="form__legend">*-Обязательные поля</p>
+                  <p class="form__legend">* &#8212; Обязательные поля</p>
                 </div>
               </form>
         </div>
       </section>
 
       <footer class="page-footer">
-        <div class="page-footer__wrapper">
+        <div class="page-footer__wrapper page-footer__wrapper--background">
           <div class="page-footer__party party">
-            <p class="party__title">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="party__title">Приглашаем<br> к сотрудничеству дилеров!</p>
             <p class="party__text">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
           </div>
         </div>
-        <img class="page-footer__map" src="https://via.placeholder.com/360x362">
+        <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7994.415214209338!2d30.31431410252063!3d59.93871621143762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607367694615!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <div class="page-footer__link-list link-list">
           <div class="link-list__wrapper">
-            <a class="link-list__logo">
+            <a href="index.html" class="link-list__logo">
               <img src="img/footer-logo-cat.svg">
             </a>
-            <ul class="link-list__social link-list__social--border social">
+            <ul class="social social--border">
               <li class="social__item">
                 <a href="" class="social__link social__link--vk">
-                  vk
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/vk-tablet.svg">
+                    <img src="img/vk.svg">
+                  </picture>
                 </a>
               </li>
               <li class="social__item">
                 <a href="" class="social__link social__link--inst">
-                  inst
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/inst-tablet.svg">
+                    <img src="img/inst.svg">
+                  </picture>
                 </a>
               </li>
               <li class="social__item">
                 <a href="" class="social__link social__link--fb">
-                  fb
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/fb-tablet.svg">
+                    <img src="img/fb.svg">
+                  </picture>
                 </a>
               </li>
             </ul>
             <div class="link-list__html-academy html-academy">
-              <a href="" class="html-academy__link">HTML-Academy</a>
-              <a href="" class="html-academy__logo-link">
-                <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
-                </svg>
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="html-academy__link">HTML-Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="html-academy__logo-link">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/htmlacademy-tablet.svg">
+                  <img src="img/htmlacademy.svg">
+                </picture>
               </a>
             </div>
           </div>

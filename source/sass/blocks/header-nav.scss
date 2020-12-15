@@ -8,22 +8,13 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop) {
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-.header-nav__link {
-  text-decoration: none;
-  color: $black;
-
-  &--color {
-    @media (min-width: $desktop) {
-      color: $white;
-    }
+    padding-top: 0;
   }
 }
 
@@ -45,6 +36,16 @@
 }
 
 .header-nav__item {
+  @media (max-width: $mobile-only) {
+    padding: 22px 0 24px 0;
+  }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
+
   &--border {
     border-bottom: 1px solid $bordershinegrey;
 
@@ -52,13 +53,48 @@
       border: none;
     }
   }
+
+  &--active {
+    @media (min-width: $tablet) {
+      padding-bottom: 10px;
+      border-bottom: 2px solid $basic-green;
+    }
+
+    @media (min-width: $desktop) {
+      border-bottom: 2px solid $basic-green;
+
+      & .header-nav__link--color {
+        padding-bottom: 10px;
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+}
+
+.header-nav__link {
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--color {
+    @media (min-width: $desktop) {
+      color: $white;
+    }
+  }
 }
 
 .header-nav__toggle {
   position: absolute;
   cursor: pointer;
-  top: 10px;
-  right: 10px;
+  top: 23px;
+  right: 20px;
   border: none;
   outline: none;
   margin: 0;

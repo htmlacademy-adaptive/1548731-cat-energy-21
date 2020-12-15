@@ -1,14 +1,138 @@
 .slider {
   text-align: center;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.slider__img {
+  width: 280px;
+  height: 232px;
+
+  @media (min-width: $tablet) {
+    width: 698px;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 670px;
+    height: 656px;
+  }
+}
+
+// @media (min-width: $tablet) {
+//   width: 691px;
+// }
+// -- Правило чтоб убрать скролл при 768, но ломается все по пп
+
+.slider__image {
+  width: 280px;
+  height: 232px;
+
+  @media (min-width: $tablet) {
+    width: 698px;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 670px;
+    height: 656px;
+    margin-top: 10px;
+  }
 }
 
 .slider__state {
+  margin-top: 23px;
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    margin-top: -70px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -105px;
+    padding-bottom: 60px;
+  }
 }
 
 .slider__toggle {
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 1px;
+    border-bottom: 1px dotted $specialgrey;
+
+    &:hover {
+      border-bottom: 1px solid $black;
+    }
+
+    &:active {
+      border: none;
+    }
+  }
+}
+
+.slider__switch {
+  width: 85px;
+  height: 15px;
+  background-color: $white;
+  border-radius: 10px;
+  margin: 0 15px 0 15px;
+  border: 1px solid $slidergrey;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    width: 438px;
+    height: 6px;
+    background-color: $sliderlightgrey;
+    border: none;
+  }
+}
+
+.slider__inner {
+  margin-left: 5px;
+  width: 38px;
+  height: 7px;
+  background-color: $basic-green;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 1px 3px $slidershadow;
+
+  @media (min-width: $tablet) {
+    margin-left: 205px;
+  }
+
+  &::before {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: $basic-green;
+      border-radius: 50%;
+      top: 12px;
+      left: 12px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 34px;
+    height: 34px;
+    background-color: $white;
+    border-radius: 50%;
+    border: 1px solid $slidergrey;
+    box-sizing: border-box;
+  }
 }

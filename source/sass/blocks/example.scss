@@ -1,31 +1,28 @@
 .example {
   background-color: $lightgrey;
+  padding-top: 28px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet) {
-    background-image: linear-gradient($white 0%, $white 60%, $lightgrey 60%, $lightgrey 100%);
+    background-image: linear-gradient($white 0%, $white 57%, $lightgrey 57%, $lightgrey 100%);
     border-top: 1px solid $bordershinegrey;
+    padding-top: 43px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop) {
-    background-image: linear-gradient($white 0%, $white 40%, $lightgrey 40%, $lightgrey 100%);
+    background-image: linear-gradient($white 0%, $white 31%, $lightgrey 31%, $lightgrey 100%);
     border: none;
-  }
-}
-
-.example__sub-wrapper {
-  @media (min-width: $desktop) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 450px;
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
 }
 
 .example__wrapper {
-  padding: 0 10px;
+  padding: 0 20px;
 
   @media (min-width: $tablet) {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop) {
@@ -33,6 +30,65 @@
     width: 1220px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+}
+
+.example__sub-wrapper {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+  }
+}
+
+.example__intro {
+  margin-bottom: 25px;
+
+
+  @media (min-width: $tablet) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 66px;
+  }
+}
+
+.example__title {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 150px;
+  }
+}
+
+.example__text {
+  margin: 0;
+
+  & br {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &--maket {
+    @media (min-width: $tablet) {
+      width: 96%;
+    }
   }
 }

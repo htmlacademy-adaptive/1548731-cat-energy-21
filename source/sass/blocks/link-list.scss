@@ -1,14 +1,15 @@
 .link-list {
   background-color: $shinegrey;
+  margin-top: -5px;
 }
 
 .link-list__wrapper {
-  padding: 0 10px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet) {
-    padding: 0 20px;
+    padding: 20px 30px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -17,29 +18,19 @@
   @media (min-width: $desktop) {
     margin: 0 auto;
     width: 1220px;
+    padding: 20px 20px;
   }
 }
 
 .link-list__logo {
   text-align: center;
-}
+  padding: 40px 0 22px 0;
 
-.link-list__social {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-
-  &--border {
-    border-top: 1px solid $bordergrey;
-    border-bottom: 1px solid $bordergrey;
-
-    @media (min-width: $tablet) {
-      border: none;
-    }
+  &:hover {
+    opacity: 0.8;
   }
 
-  @media (min-width: $tablet) {
-    display: flex;
+  &:active {
+    opacity: 0.6;
   }
 }
