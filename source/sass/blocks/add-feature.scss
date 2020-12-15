@@ -4,9 +4,18 @@
   line-height: 14px;
   font-weight: normal;
   color: $darkgrey;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
+  }
+}
+
+.add-feature__value {
+  @media (min-width: $tablet) {
+    margin-inline-start: 50px;
   }
 }

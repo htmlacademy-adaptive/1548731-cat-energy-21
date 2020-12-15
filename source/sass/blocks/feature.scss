@@ -4,9 +4,38 @@
   line-height: 16px;
   font-weight: normal;
   color: $darkgrey;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: min-content min-content min-content;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 16px;
+    grid-row-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 33px;
+
+  }
+}
+
+.feature__value {
+  text-align: right;
+
+  @media (min-width: $tablet) {
+    margin-inline-start: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $slidergrey;
+  }
+}
+
+.feature__key {
+  @media (min-width: $tablet) {
+    padding-bottom: 8px;
+    border-bottom: 1px solid $slidergrey;
   }
 }
