@@ -12,6 +12,11 @@
     line-height: 20px;
     margin: 0;
   }
+
+  @media (min-width: $desktop) {
+    width: 283px;
+    justify-content: space-between;
+  }
 }
 
 .add-feature__value {

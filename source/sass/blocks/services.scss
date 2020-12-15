@@ -40,6 +40,10 @@
 
   &:last-child {
     margin-bottom: 0;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 25px;
+    }
   }
 
   @media (min-width: $tablet) {

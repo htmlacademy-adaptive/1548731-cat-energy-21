@@ -17,6 +17,15 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop) {
+    height: auto;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/catalog-gift-desktop.png");
+  }
 }
 
 .gift__svg {
@@ -25,6 +34,11 @@
   @media (min-width: $tablet) {
     margin-top: 0;
     margin-left: 78px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    padding: 52px 40px 18px 40px;
   }
 }
 
@@ -43,5 +57,11 @@
     margin-top: 0;
     text-align: left;
     margin-right: 120px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 0;
+    text-align: center;
+    padding: 30px 40px 40px 40px;
   }
 }
