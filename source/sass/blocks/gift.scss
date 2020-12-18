@@ -1,5 +1,45 @@
 .gift {
   background-image: url("../img/catalog-gift-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/catalog-gift-tablet.png");
+    height: 200px;
+    margin-top: 65px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    height: auto;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/catalog-gift-desktop.png");
+  }
+}
+
+.gift__svg {
+  margin-top: 60px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    margin-left: 78px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    padding: 52px 40px 18px 40px;
+  }
 }
 
 .gift__title {
@@ -8,4 +48,20 @@
   line-height: 20px;
   font-weight: normal;
   color: $white;
+  width: 165px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 47px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    text-align: left;
+    margin-right: 120px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 0;
+    text-align: center;
+    padding: 30px 40px 40px 40px;
+  }
 }

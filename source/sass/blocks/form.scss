@@ -1,25 +1,53 @@
 .form__wrapper {
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    padding: 0 40px 75px 40px;
+  }
+
   @media (min-width: $desktop) {
-    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    padding: 20px 0 67px 0;
   }
 }
 
 .form__button-wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0 20px 32px 20px;
 
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: row;
-    padding-bottom: 70px;
-    padding-top: 30px;
+    padding: 17px 70px 70px 70px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4px 30px 4px 30px;
   }
 }
 
 .form__button {
+  margin-bottom: 23px;
+
   @media (min-width: $tablet) {
-    padding: 13px 45px;
-    margin-right: 72px;
+    margin-bottom: 0;
+    margin-right: 62px;
+    width: 282px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 568px;
+    margin-right: 80px;
   }
 }
 
@@ -30,4 +58,8 @@
   font-weight: normal;
   align-self: center;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+  }
 }

@@ -4,9 +4,23 @@
   line-height: 14px;
   font-weight: normal;
   color: $darkgrey;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet) {
     font-size: 16px;
     line-height: 20px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 283px;
+    justify-content: space-between;
+  }
+}
+
+.add-feature__value {
+  @media (min-width: $tablet) {
+    margin-inline-start: 50px;
   }
 }
