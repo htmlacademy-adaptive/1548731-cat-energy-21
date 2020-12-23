@@ -1,12 +1,20 @@
 .promo {
   color: $white;
-  background-image:
+  background:
     linear-gradient($promo-green 0%, $promo-green 62%, $white 62%, $white 100%),
     url("../img/promocat-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
   padding-bottom: 10px;
+
+  @media (min-resolution: 2dppx) {
+    background:
+      linear-gradient($promo-green 0%, $promo-green 62%, $white 62%, $white 100%),
+      url("../img/promocat-mobile@2x.jpg");
+    background-position: top;
+    background-size: 100%;
+  }
 
   @media (min-width: $tablet) {
     background-color: $white;
@@ -17,9 +25,20 @@
   @media (min-width: $desktop) {
     background:
       linear-gradient(to right, $white 0%, $white 50%, $promo-green 50%, $promo-green 100%),
-      url("../img/promocat-desktop.jpg") 100%;
+      url("../img/promocat-desktop.jpg");
     background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
     padding-bottom: 49px;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        linear-gradient(to right, $white 0%, $white 50%, $promo-green 50%, $promo-green 100%),
+        url("../img/promocat-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
   }
 }
 

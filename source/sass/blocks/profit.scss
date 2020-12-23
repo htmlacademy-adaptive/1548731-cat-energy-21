@@ -4,6 +4,9 @@
   justify-content: center;
   margin: 0 auto;
 
+  @media (max-width: $mobile-only) {
+    width: 280px;
+  }
 
   @media (min-width: $tablet) {
     justify-content: flex-start;
