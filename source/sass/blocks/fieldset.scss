@@ -1,12 +1,12 @@
 .fieldset {
   border: none;
   margin: 0;
-  padding: 15px 20px;
+  padding: 15px 20px 9px 20px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet) {
-    padding: 20px 30px;
+    padding: 22px 30px;
   }
 
   @media (min-width: $desktop) {
@@ -23,7 +23,13 @@
 
     @media (min-width: $desktop) {
       padding-top: 60px;
-      padding-bottom: 65px;
+      padding-bottom: 68px;
+    }
+
+    &:nth-child(4) {
+      @media (min-width: $desktop) {
+        padding-bottom: 61px;
+      }
     }
 
     &::before {
@@ -47,7 +53,7 @@
   &--border {
     border-top: 1px solid $bordergrey;
     border-bottom: 1px solid $bordergrey;
-    padding: 25px 0 16px 0;
+    padding: 28px 0 28px 0;
 
     @media (min-width: $tablet) {
       border: 1px solid $borderwhitegrey;
@@ -163,6 +169,8 @@
 .fieldset__add-wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   @media (min-width: $tablet) {
     display: grid;
@@ -187,6 +195,7 @@
 .fieldset__text {
   border: 1px solid $borderwhitegrey;
   padding-bottom: 50px;
+  margin-bottom: 6px;
 
   @media (min-width: $tablet) {
     padding-bottom: 60px;

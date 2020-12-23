@@ -134,6 +134,14 @@
     color: $darkgrey;
     height: 60px;
 
+    &:hover {
+      background-color: $borderlightgrey;
+    }
+
+    &:active {
+      color: $greyopacity;
+    }
+
     @media (min-width: $tablet) {
       height: 41px;
       margin-bottom: 42px;

@@ -13,7 +13,8 @@
   justify-content: center;
   align-items: center;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $dark-green;
   }
 
