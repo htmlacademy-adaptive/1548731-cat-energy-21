@@ -25,3 +25,11 @@
   text-decoration: none;
   margin-right: 20px;
 }
+
+.html-academy__icon {
+  fill: $icongrey;
+
+  &:hover {
+    fill: $basic-green;
+  }
+}

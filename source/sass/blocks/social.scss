@@ -44,3 +44,51 @@
     opacity: 0.3;
   }
 }
+
+.social__icon {
+  &--vk {
+    fill: $icongrey;
+    width: 23px;
+    height: 16px;
+
+    @media (min-width: $tablet) {
+      width: 30px;
+      height: 22px;
+    }
+
+    &:hover {
+      fill: $basic-green;
+    }
+  }
+
+  &--inst {
+    fill: $icongrey;
+    width: 16px;
+    height: 16px;
+
+    @media (min-width: $tablet) {
+      width: 23px;
+      height: 23px;
+    }
+
+    &:hover {
+      fill: $basic-green;
+    }
+  }
+
+  &--fb {
+    stroke: $icongrey;
+    fill: none;
+    width: 22px;
+    height: 22px;
+
+    @media (min-width: $tablet) {
+      width: 28px;
+      height: 33px;
+    }
+
+    &:hover {
+      stroke: $basic-green;
+    }
+  }
+}
