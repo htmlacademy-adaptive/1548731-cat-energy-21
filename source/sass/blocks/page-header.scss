@@ -33,10 +33,6 @@
   }
 }
 
-.page-header__logo2 {
-  display: none;
-}
-
 .page-header__logo {
   &:hover {
     opacity: 0.8;
@@ -57,16 +53,21 @@
   }
 }
 
+.page-header__logo-text {
+  display: none;
+}
+
 @media (max-width: $mobile-only) {
   .page-header__logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0 52px 10px 20px;
+    box-sizing: border-box;
     border-bottom: 1px solid $bordershinegrey;
   }
 
-  .page-header__logo2 {
+  .page-header__logo-text {
     margin: 0 auto;
     display: block;
   }
