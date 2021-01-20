@@ -66,20 +66,26 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: $black;
+
+  padding-bottom: 1px;
+  border-bottom: 1px dotted $specialgrey;
+
+  &:hover {
+    border-bottom: 1px solid $specialblack;
+  }
+
+  &:active {
+    border: none;
+  }
 
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
-    padding-bottom: 1px;
-    border-bottom: 1px dotted $specialgrey;
-
-    &:hover {
-      border-bottom: 1px solid $black;
-    }
-
-    &:active {
-      border: none;
-    }
   }
 }
 
@@ -109,6 +115,16 @@
   border-radius: 5px;
   position: relative;
   box-shadow: 0 1px 3px $slidershadow;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 2px 4px $sliderhover;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px $sliderhover;
+    border: 1px solid $basic-green;
+  }
 
   @media (min-width: $tablet) {
     margin-left: 205px;
